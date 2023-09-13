@@ -172,8 +172,11 @@ const App: React.FC = () => {
         columns={mergedColumns}
         rowClassName="editable-row"
         pagination={{
-          onChange: cancel,
-        }}
+            current: 1,
+            pageSize:10,
+            total: 1,
+            showQuickJumper: true,
+          }}
       />
     </Form>
   );
